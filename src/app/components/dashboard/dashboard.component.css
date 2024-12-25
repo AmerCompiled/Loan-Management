@@ -1,0 +1,119 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #000000; /* Black background */
+  margin: 0;
+  padding: 0;
+  color: #ffffff; /* White text */
+}
+
+.dashboard {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #1a1a1a; /* Dark gray card background */
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+h1, h2, h3, h4 {
+  color: #ffcc00; /* Vibrant yellow headings */
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  text-align: left;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+input[type="text"], input[type="number"], select {
+  width: calc(100% - 20px);
+  padding: 12px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 2px solid #333333;
+  border-radius: 6px;
+  font-size: 16px;
+  background: #2b2b2b; /* Darker input background */
+  color: #ffffff;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, select:focus {
+  border-color: #ff6600; /* Highlight border on focus */
+}
+
+button {
+  background: linear-gradient(90deg, #ff6600, #ffcc00); /* Vibrant gradient */
+  color: #ffffff;
+  padding: 12px 18px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 12px rgba(255, 102, 0, 0.5);
+}
+
+.result {
+  margin-top: 20px;
+  padding: 15px;
+  background: #262626; /* Slightly lighter than card background */
+  border: 1px solid #333333;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.result h2, .result h3, .result h4 {
+  margin: 10px 0;
+  color: #00ccff; /* Vibrant cyan for results */
+}
+
+.result ul {
+  list-style-type: disc;
+  margin: 10px 0;
+  padding-left: 20px;
+  color: #cccccc; /* Subtle gray text for reasons */
+}
+
+.result li {
+  text-align: left;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  color: #666666;
+  font-size: 14px;
+}
+
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 15px;
+  }
+
+  input[type="text"], input[type="number"], select {
+    font-size: 14px;
+  }
+
+  button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
